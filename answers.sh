@@ -50,6 +50,14 @@ INNER JOIN companies
 ON companies.Name = employees.Company
 WHERE Role ='Graphic Designer';
 
+1. SELECT Name, Points FROM students
+    WHERE Points = (SELECT MAX(Points) FROM students);
+2. SELECT AVG(Points) FROM students;
+3. SELECT COUNT(name) FROM students
+    WHERE Points = 500;
+4. SELECT Name FROM students WHERE Name LIKE "%s%";
+5. SELECT * FROM students ORDER BY Points DESC;
+
 
 
 
